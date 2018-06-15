@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: 12-Jun-2018 às 18:19
+-- Generation Time: 15-Jun-2018 às 16:03
 -- Versão do servidor: 10.1.31-MariaDB
 -- PHP Version: 7.2.4
 
@@ -43,7 +43,8 @@ CREATE TABLE `clientes` (
 --
 
 INSERT INTO `clientes` (`nome`, `idade`, `CPF`, `email`, `senha`, `sexo`, `id`) VALUES
-('Lucas Pedro', 20, '45646875', 'lucas@outlook.com', '321', 'Masculino', 2);
+('Lucas Pedro', 20, '45646875', 'lucas@outlook.com', '321', 'Masculino', 2),
+('Lucas Pedro da Silva', 22, '490255620', 'pedro@outlook.com', '4241', 'Masculino', 3);
 
 -- --------------------------------------------------------
 
@@ -164,7 +165,8 @@ CREATE TABLE `usuario` (
 --
 
 INSERT INTO `usuario` (`nome`, `email`, `senha`, `id`) VALUES
-('Lucas Pedro', 'lucas@outlook.com', '321', 2);
+('Lucas Pedro', 'lucas@outlook.com', '321', 2),
+('Lucas Pedro da Silva', 'pedro@outlook.com', '4241', 3);
 
 --
 -- Indexes for dumped tables
@@ -214,7 +216,7 @@ ALTER TABLE `usuario`
 -- AUTO_INCREMENT for table `clientes`
 --
 ALTER TABLE `clientes`
-  MODIFY `id` int(5) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id` int(5) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
 -- AUTO_INCREMENT for table `colaboradoras`
@@ -244,7 +246,7 @@ ALTER TABLE `colaboradoraspreferencial3`
 -- AUTO_INCREMENT for table `usuario`
 --
 ALTER TABLE `usuario`
-  MODIFY `id` int(5) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id` int(5) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
